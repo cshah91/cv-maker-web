@@ -1,0 +1,129 @@
+<section class="bg-light" id="templates">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Templates</h2>
+        <h3 class="section-subheading text-muted">We have just the right templates for you !</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" (click)="showTemplate(1)">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="../assets/img/portfolio/01-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Default</h4>
+          <!-- TODO: Content to be changed -->
+          <p class="text-muted">Illustration</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" (click)="showTemplate(2)">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="../assets/img/portfolio/02-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>NMIMS</h4>
+          <!-- TODO: Content to be changed -->
+          <p class="text-muted">Graphic Design</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" (click)="showTemplate(3)">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="../assets/img/portfolio/03-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Harvard</h4>
+          <!-- TODO: Content to be changed -->
+          <p class="text-muted">Identity</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Default Template Modal -->
+<div bsModal #tmpDefaultModal="bs-modal" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal" (click)="tmpDefaultModal.hide()">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <h2 class="text-uppercase">Default</h2>
+              <p class="item-intro text-muted">The most standard template.</p>
+              <img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/01-full.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NMIMS Template Modal -->
+<div bsModal #tmpNMIMSModal="bs-modal" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal" (click)="tmpNMIMSModal.hide()">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <h2 class="text-uppercase">NMIMS</h2>
+              <p class="item-intro text-muted">Template used by the NMIMS University.</p>
+              <img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/02-full.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Harvard Template Modal -->
+<div bsModal #tmpHarvardModal="bs-modal" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal" (click)="tmpHarvardModal.hide()">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <h2 class="text-uppercase">Harvard</h2>
+              <p class="item-intro text-muted">Template used by the Harvard University.</p>
+              <img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/03-full.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
