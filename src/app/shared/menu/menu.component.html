@@ -38,20 +38,28 @@ aria-labelledby="loginModalLabel" aria-hidden="true">
       <!-- <div class="container"> -->
         <div class="row">
           <div class="col-lg-12 mx-auto">
-            <div class="modal-body">
-              <h2 class="text-uppercase">Sign In</h2>
-              <form id="loginForm" class="form-horizontal" (ngSubmit)="login()" [formGroup]="loginForm">
-                <!-- [saBootstrapValidator]="validatorOptions" -->
+            <form id="loginForm" class="form-horizontal" [formGroup]="loginForm">
+              <!-- [saBootstrapValidator]="validatorOptions" -->
+              <div class="modal-header">
+                <h2 class="text-uppercase">Sign In</h2>
+              </div>
+              <div class="modal-body">
                 <div class="form-group">
                   <label class="control-label">Username*</label>
-                  <input class="form-control" placeholder="Enter a username" type="text" formControlName="username" name="username">
+                  <input class="form-control" placeholder="Enter a username" type="email" formControlName="username" name="username">
+                  <!-- <p class="error-msg" *ngIf="loginForm.controls.username.errors.required &&
+                            loginForm.controls.username.dirty">
+                            Please enter a valid username!</p> -->
                 </div>
                 <div class="form-group">
                   <label class="control-label">Password*</label>
-                  <input class="form-control" placeholder="Enter a password" type="text" formControlName="password" name="password">
+                  <input class="form-control" placeholder="Enter a password" type="password" formControlName="password" name="password">
                 </div>
-              </form>
-            </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" (click)="login()" class="btn btn-primary">Login</button>
+              </div>
+            </form>
           </div>
         </div>
       <!-- </div> -->
